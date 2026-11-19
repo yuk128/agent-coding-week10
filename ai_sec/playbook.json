@@ -1,0 +1,1 @@
+{ "SECRET_IN_OUTPUT": { "action": "REVIEW", "owner": "개발팀", "slaMin": 480, "steps": ["확인한다"] }, "BRUTE_FORCE": { "action": "REVIEW", "owner": "개발팀", "slaMin": 480, "steps": ["확인한다"] } }

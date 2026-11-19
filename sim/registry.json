@@ -1,0 +1,24 @@
+{
+  "_note": "수업용 가상 패키지 저장소(로컬). 실제 npm 이 아니다. 이름 · 수치는 모두 가상이다.",
+  "packages": {
+    "express":      { "weeklyDownloads": 25000000, "ageDays": 5000, "maintainers": 6, "license": "MIT", "deprecated": false, "advisories": [{ "id": "ADV-1001", "below": "4.19.2", "severity": "high" }], "versions": { "4.17.1": {}, "4.18.2": {}, "4.19.2": {} } },
+    "lodash":       { "weeklyDownloads": 40000000, "ageDays": 5200, "maintainers": 4, "license": "MIT", "deprecated": false, "advisories": [{ "id": "ADV-1002", "below": "4.17.21", "severity": "critical" }], "versions": { "4.17.15": {}, "4.17.20": {}, "4.17.21": {} } },
+    "axios":        { "weeklyDownloads": 30000000, "ageDays": 3600, "maintainers": 3, "license": "MIT", "deprecated": false, "advisories": [{ "id": "ADV-1003", "below": "1.6.0", "severity": "moderate" }], "versions": { "0.21.1": {}, "1.6.0": {}, "1.7.2": {} } },
+    "jsonwebtoken": { "weeklyDownloads": 9000000, "ageDays": 3900, "maintainers": 3, "license": "MIT", "deprecated": false, "advisories": [{ "id": "ADV-1004", "below": "9.0.0", "severity": "high" }], "versions": { "8.5.1": {}, "9.0.0": {}, "9.0.2": {} } },
+    "minimist":     { "weeklyDownloads": 60000000, "ageDays": 4800, "maintainers": 2, "license": "MIT", "deprecated": false, "advisories": [{ "id": "ADV-1005", "below": "1.2.6", "severity": "critical" }], "versions": { "1.2.0": {}, "1.2.6": {}, "1.2.8": {} } },
+    "dotenv":       { "weeklyDownloads": 30000000, "ageDays": 3800, "maintainers": 2, "license": "BSD-2-Clause", "deprecated": false, "advisories": [], "versions": { "16.4.5": {} } },
+    "bcryptjs":     { "weeklyDownloads": 3500000, "ageDays": 3900, "maintainers": 2, "license": "MIT", "deprecated": false, "advisories": [], "versions": { "2.4.3": {} } },
+    "helmet":       { "weeklyDownloads": 2500000, "ageDays": 3600, "maintainers": 3, "license": "MIT", "deprecated": false, "advisories": [], "versions": { "7.1.0": {} } },
+    "cors":         { "weeklyDownloads": 20000000, "ageDays": 4200, "maintainers": 3, "license": "MIT", "deprecated": false, "advisories": [], "versions": { "2.8.5": {} } },
+    "uuid":         { "weeklyDownloads": 70000000, "ageDays": 4500, "maintainers": 4, "license": "MIT", "deprecated": false, "advisories": [], "versions": { "9.0.1": {} } },
+    "request":      { "weeklyDownloads": 12000000, "ageDays": 5300, "maintainers": 2, "license": "Apache-2.0", "deprecated": true, "advisories": [], "versions": { "2.88.2": {} } },
+    "moment":       { "weeklyDownloads": 15000000, "ageDays": 4900, "maintainers": 2, "license": "MIT", "deprecated": false, "advisories": [], "versions": { "2.30.1": {} } },
+    "sharp-lite-bin": { "weeklyDownloads": 7000, "ageDays": 700, "maintainers": 2, "license": "Apache-2.0", "deprecated": false, "advisories": [], "versions": { "1.4.0": { "scripts": { "postinstall": "node fetch-binary.js" } } } },
+    "node-gyp-helper": { "weeklyDownloads": 600000, "ageDays": 2000, "maintainers": 4, "license": "MIT", "deprecated": false, "advisories": [], "versions": { "3.1.0": { "scripts": { "install": "node-gyp rebuild" } } } },
+    "expresss":     { "weeklyDownloads": 120, "ageDays": 21, "maintainers": 1, "license": "ISC", "deprecated": false, "advisories": [], "versions": { "1.0.0": { "scripts": { "postinstall": "node setup.js" } } } },
+    "lodahs":       { "weeklyDownloads": 85, "ageDays": 400, "maintainers": 1, "license": "ISC", "deprecated": false, "advisories": [], "versions": { "1.0.2": {} } },
+    "llm-guardrail-kit": { "weeklyDownloads": 140, "ageDays": 12, "maintainers": 1, "license": "ISC", "deprecated": false, "advisories": [], "versions": { "0.1.0": { "scripts": { "preinstall": "node collect.js" } } } },
+    "tiny-validator": { "weeklyDownloads": 480000, "ageDays": 2500, "maintainers": 2, "license": "MIT", "deprecated": false, "advisories": [], "versions": { "2.1.0": {} } },
+    "color-utils-x": { "weeklyDownloads": 650, "ageDays": 15, "maintainers": 1, "license": "MIT", "deprecated": false, "advisories": [], "versions": { "0.0.3": {} } }
+  }
+}

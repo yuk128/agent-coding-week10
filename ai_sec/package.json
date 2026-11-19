@@ -1,0 +1,12 @@
+{
+  "name": "minimall-ai-suggested",
+  "version": "1.0.0",
+  "_설명": "AI 가 '필요한 라이브러리'라며 추천한 package.json (리뷰 대상)",
+  "dependencies": {
+    "express": "^4.17.1",
+    "lodash": "4.17.15",
+    "express-secure-session-pro": "^1.2.0",
+    "helmet": "latest",
+    "expresss": "1.0.0"
+  }
+}

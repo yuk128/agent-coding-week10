@@ -1,0 +1,24 @@
+{
+  "name": "minimall-sec-lab",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI 활용 소프트웨어 공학 8강 — AI 보안과 안전한 활용 미니 프로젝트 (수업용 가상 예시)",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "eval": "node scripts/eval.js all",
+    "eval:redteam": "node scripts/eval.js redteam",
+    "eval:code": "node scripts/eval.js code",
+    "eval:scanner": "node scripts/eval.js scanner",
+    "eval:guard": "node scripts/eval.js guard",
+    "eval:secops": "node scripts/eval.js secops",
+    "eval:ai": "node scripts/eval.js all --dir ai_sec",
+    "demo": "node scripts/demo.js",
+    "playbook": "node scripts/check_playbook.js",
+    "incidents": "node scripts/check_incidents.js",
+    "docs": "node scripts/check_docs.js",
+    "sec-ci": "node scripts/sec-ci.js",
+    "test": "node --test"
+  }
+}

@@ -1,0 +1,118 @@
+{"id":"L0001","ts":"2026-10-26T09:01:52Z","level":"INFO","user":"u8","type":"TOOL_EXECUTED","tool":"get_order_status","via":"allow","owner":"u8","msg":"주문 ORD-1005 조회(본인)"}
+{"id":"L0002","ts":"2026-10-26T09:03:50Z","level":"INFO","user":"u2","type":"TOOL_EXECUTED","tool":"get_order_status","via":"allow","owner":"u2","msg":"주문 ORD-1001 조회(본인)"}
+{"id":"L0003","ts":"2026-10-26T09:04:26Z","level":"INFO","user":"u6","type":"TOOL_EXECUTED","tool":"get_order_status","via":"allow","owner":"u6","msg":"주문 ORD-1005 조회(본인)"}
+{"id":"L0004","ts":"2026-10-26T09:04:59Z","level":"INFO","user":"u4","type":"TOOL_EXECUTED","tool":"get_order_status","via":"allow","owner":"u4","msg":"주문 ORD-1004 조회(본인)"}
+{"id":"L0005","ts":"2026-10-26T09:05:04Z","level":"INFO","user":"u5","type":"TOOL_EXECUTED","tool":"search_product","via":"allow","msg":"검색: 받침대"}
+{"id":"L0006","ts":"2026-10-26T09:05:55Z","level":"INFO","user":"u1","type":"TOOL_EXECUTED","tool":"search_product","via":"allow","msg":"검색: 받침대"}
+{"id":"L0007","ts":"2026-10-26T09:06:33Z","level":"INFO","user":"u2","type":"TOOL_PENDING","tool":"apply_coupon","msg":"쿠폰 적용 대기(사용자 확인 필요)"}
+{"id":"L0008","ts":"2026-10-26T09:06:45Z","level":"INFO","user":"u5","type":"TOOL_EXECUTED","tool":"search_product","via":"allow","msg":"검색: 받침대"}
+{"id":"L0009","ts":"2026-10-26T09:07:13Z","level":"INFO","user":"u4","type":"TOOL_EXECUTED","tool":"get_order_status","via":"allow","owner":"u4","msg":"주문 ORD-1005 조회(본인)"}
+{"id":"L0010","ts":"2026-10-26T09:08:24Z","level":"INFO","user":"u6","type":"TOOL_EXECUTED","tool":"search_product","via":"allow","msg":"검색: 마우스"}
+{"id":"L0011","ts":"2026-10-26T09:09:00Z","level":"INFO","user":"u1","type":"TOOL_PENDING","tool":"apply_coupon","msg":"쿠폰 적용 대기(사용자 확인 필요)"}
+{"id":"L0012","ts":"2026-10-26T09:09:06Z","level":"INFO","user":"u1","type":"TOOL_EXECUTED","tool":"search_product","via":"allow","msg":"검색: 마우스"}
+{"id":"L0013","ts":"2026-10-26T09:10:00Z","level":"INFO","type":"TOOL_EXECUTED","user":"u9","tool":"get_order_status","via":"allow","owner":"u9","msg":"주문 ORD-1006 조회(본인)"}
+{"id":"L0014","ts":"2026-10-26T09:10:54Z","level":"INFO","user":"u1","type":"TOOL_PENDING","tool":"apply_coupon","msg":"쿠폰 적용 대기(사용자 확인 필요)"}
+{"id":"L0015","ts":"2026-10-26T09:10:58Z","level":"INFO","user":"u2","type":"TOOL_EXECUTED","tool":"get_order_status","via":"allow","owner":"u2","msg":"주문 ORD-1002 조회(본인)"}
+{"id":"L0016","ts":"2026-10-26T09:11:26Z","level":"INFO","user":"u3","type":"TOOL_EXECUTED","tool":"get_order_status","via":"allow","owner":"u3","msg":"주문 ORD-1002 조회(본인)"}
+{"id":"L0017","ts":"2026-10-26T09:11:26Z","level":"INFO","user":"u8","type":"TOOL_EXECUTED","tool":"search_product","via":"allow","msg":"검색: 마우스"}
+{"id":"L0018","ts":"2026-10-26T09:12:06Z","level":"INFO","user":"u5","type":"TOOL_EXECUTED","tool":"search_product","via":"allow","msg":"검색: 받침대"}
+{"id":"L0019","ts":"2026-10-26T09:13:40Z","level":"INFO","user":"u3","type":"TOOL_EXECUTED","tool":"get_order_status","via":"allow","owner":"u3","msg":"주문 ORD-1004 조회(본인)"}
+{"id":"L0020","ts":"2026-10-26T09:14:30Z","level":"INFO","user":"u8","type":"TOOL_EXECUTED","tool":"get_order_status","via":"allow","owner":"u8","msg":"주문 ORD-1005 조회(본인)"}
+{"id":"L0021","ts":"2026-10-26T09:14:59Z","level":"INFO","user":"u1","type":"TOOL_EXECUTED","tool":"get_order_status","via":"allow","owner":"u1","msg":"주문 ORD-1004 조회(본인)"}
+{"id":"L0022","ts":"2026-10-26T09:15:28Z","level":"INFO","user":"u3","type":"TOOL_PENDING","tool":"apply_coupon","msg":"쿠폰 적용 대기(사용자 확인 필요)"}
+{"id":"L0023","ts":"2026-10-26T09:18:00Z","level":"INFO","user":"u2","type":"TOOL_EXECUTED","tool":"get_order_status","via":"allow","owner":"u2","msg":"주문 ORD-1001 조회(본인)"}
+{"id":"L0024","ts":"2026-10-26T09:18:04Z","level":"INFO","user":"u4","type":"TOOL_EXECUTED","tool":"get_order_status","via":"allow","owner":"u4","msg":"주문 ORD-1003 조회(본인)"}
+{"id":"L0025","ts":"2026-10-26T09:18:25Z","level":"INFO","user":"u2","type":"TOOL_EXECUTED","tool":"search_product","via":"allow","msg":"검색: 마우스"}
+{"id":"L0026","ts":"2026-10-26T09:18:43Z","level":"INFO","user":"u8","type":"TOOL_PENDING","tool":"apply_coupon","msg":"쿠폰 적용 대기(사용자 확인 필요)"}
+{"id":"L0027","ts":"2026-10-26T09:19:35Z","level":"INFO","user":"u8","type":"TOOL_EXECUTED","tool":"search_product","via":"allow","msg":"검색: 키보드"}
+{"id":"L0028","ts":"2026-10-26T09:20:04Z","level":"INFO","user":"u5","type":"TOOL_EXECUTED","tool":"search_product","via":"allow","msg":"검색: 케이블"}
+{"id":"L0029","ts":"2026-10-26T09:21:07Z","level":"INFO","user":"u3","type":"TOOL_EXECUTED","tool":"search_product","via":"allow","msg":"검색: 키보드"}
+{"id":"L0030","ts":"2026-10-26T09:21:38Z","level":"INFO","user":"u6","type":"TOOL_EXECUTED","tool":"search_product","via":"allow","msg":"검색: 받침대"}
+{"id":"L0031","ts":"2026-10-26T09:23:10Z","level":"INFO","user":"u5","type":"TOOL_EXECUTED","tool":"search_product","via":"allow","msg":"검색: 케이블"}
+{"id":"L0032","ts":"2026-10-26T09:23:18Z","level":"INFO","user":"u4","type":"TOOL_EXECUTED","tool":"search_product","via":"allow","msg":"검색: 케이블"}
+{"id":"L0033","ts":"2026-10-26T09:23:36Z","level":"INFO","user":"u5","type":"TOOL_PENDING","tool":"apply_coupon","msg":"쿠폰 적용 대기(사용자 확인 필요)"}
+{"id":"L0034","ts":"2026-10-26T09:24:12Z","level":"INFO","user":"u3","type":"TOOL_EXECUTED","tool":"get_order_status","via":"allow","owner":"u3","msg":"주문 ORD-1005 조회(본인)"}
+{"id":"L0035","ts":"2026-10-26T09:24:21Z","level":"INFO","user":"u6","type":"TOOL_EXECUTED","tool":"search_product","via":"allow","msg":"검색: 받침대"}
+{"id":"L0036","ts":"2026-10-26T09:24:29Z","level":"INFO","user":"u8","type":"TOOL_EXECUTED","tool":"get_order_status","via":"allow","owner":"u8","msg":"주문 ORD-1002 조회(본인)"}
+{"id":"L0037","ts":"2026-10-26T09:24:49Z","level":"INFO","user":"u3","type":"TOOL_EXECUTED","tool":"search_product","via":"allow","msg":"검색: 받침대"}
+{"id":"L0038","ts":"2026-10-26T09:25:00Z","level":"INFO","user":"u1","type":"TOOL_EXECUTED","tool":"search_product","via":"allow","msg":"검색: 마우스"}
+{"id":"L0039","ts":"2026-10-26T09:25:00Z","level":"WARN","type":"RATE_LIMITED","user":"u5","code":"RATE_LIMIT","msg":"분당 요청 초과(정상 사용자 연타)"}
+{"id":"L0040","ts":"2026-10-26T09:25:20Z","level":"INFO","user":"u3","type":"TOOL_EXECUTED","tool":"search_product","via":"allow","msg":"검색: 케이블"}
+{"id":"L0041","ts":"2026-10-26T09:25:27Z","level":"INFO","user":"u2","type":"TOOL_EXECUTED","tool":"get_order_status","via":"allow","owner":"u2","msg":"주문 ORD-1005 조회(본인)"}
+{"id":"L0042","ts":"2026-10-26T09:28:03Z","level":"INFO","user":"u3","type":"TOOL_EXECUTED","tool":"search_product","via":"allow","msg":"검색: 키보드"}
+{"id":"L0043","ts":"2026-10-26T09:29:37Z","level":"INFO","user":"u4","type":"TOOL_EXECUTED","tool":"search_product","via":"allow","msg":"검색: 키보드"}
+{"id":"L0044","ts":"2026-10-26T09:29:46Z","level":"INFO","user":"u1","type":"TOOL_PENDING","tool":"apply_coupon","msg":"쿠폰 적용 대기(사용자 확인 필요)"}
+{"id":"L0045","ts":"2026-10-26T09:30:47Z","level":"INFO","user":"u2","type":"TOOL_PENDING","tool":"apply_coupon","msg":"쿠폰 적용 대기(사용자 확인 필요)"}
+{"id":"L0046","ts":"2026-10-26T09:30:58Z","level":"INFO","user":"u4","type":"TOOL_EXECUTED","tool":"get_order_status","via":"allow","owner":"u4","msg":"주문 ORD-1003 조회(본인)"}
+{"id":"L0047","ts":"2026-10-26T09:31:44Z","level":"INFO","user":"u4","type":"TOOL_EXECUTED","tool":"get_order_status","via":"allow","owner":"u4","msg":"주문 ORD-1003 조회(본인)"}
+{"id":"L0048","ts":"2026-10-26T09:32:28Z","level":"INFO","user":"u3","type":"TOOL_EXECUTED","tool":"search_product","via":"allow","msg":"검색: 마우스"}
+{"id":"L0049","ts":"2026-10-26T09:33:20Z","level":"WARN","type":"INPUT_BLOCKED","user":"u2","code":"IGNORE_INSTRUCTIONS","msg":"차단 1회"}
+{"id":"L0050","ts":"2026-10-26T09:33:59Z","level":"INFO","user":"u4","type":"TOOL_EXECUTED","tool":"get_order_status","via":"allow","owner":"u4","msg":"주문 ORD-1004 조회(본인)"}
+{"id":"L0051","ts":"2026-10-26T09:36:05Z","level":"INFO","user":"u6","type":"TOOL_EXECUTED","tool":"search_product","via":"allow","msg":"검색: 키보드"}
+{"id":"L0052","ts":"2026-10-26T09:38:08Z","level":"INFO","user":"u2","type":"TOOL_EXECUTED","tool":"get_order_status","via":"allow","owner":"u2","msg":"주문 ORD-1001 조회(본인)"}
+{"id":"L0053","ts":"2026-10-26T09:40:58Z","level":"INFO","user":"u2","type":"TOOL_EXECUTED","tool":"search_product","via":"allow","msg":"검색: 받침대"}
+{"id":"L0054","ts":"2026-10-26T09:41:45Z","level":"INFO","user":"u3","type":"TOOL_EXECUTED","tool":"get_order_status","via":"allow","owner":"u3","msg":"주문 ORD-1001 조회(본인)"}
+{"id":"L0055","ts":"2026-10-26T09:41:53Z","level":"INFO","user":"u6","type":"TOOL_EXECUTED","tool":"search_product","via":"allow","msg":"검색: 케이블"}
+{"id":"L0056","ts":"2026-10-26T09:42:32Z","level":"INFO","user":"u5","type":"TOOL_EXECUTED","tool":"get_order_status","via":"allow","owner":"u5","msg":"주문 ORD-1002 조회(본인)"}
+{"id":"L0057","ts":"2026-10-26T09:44:30Z","level":"INFO","user":"u6","type":"TOOL_EXECUTED","tool":"get_order_status","via":"allow","owner":"u6","msg":"주문 ORD-1004 조회(본인)"}
+{"id":"L0058","ts":"2026-10-26T09:45:48Z","level":"INFO","user":"u5","type":"TOOL_EXECUTED","tool":"get_order_status","via":"allow","owner":"u5","msg":"주문 ORD-1005 조회(본인)"}
+{"id":"L0059","ts":"2026-10-26T09:46:26Z","level":"INFO","user":"u2","type":"TOOL_EXECUTED","tool":"search_product","via":"allow","msg":"검색: 키보드"}
+{"id":"L0060","ts":"2026-10-26T09:47:58Z","level":"INFO","user":"u8","type":"TOOL_PENDING","tool":"apply_coupon","msg":"쿠폰 적용 대기(사용자 확인 필요)"}
+{"id":"L0061","ts":"2026-10-26T09:48:26Z","level":"INFO","user":"u8","type":"TOOL_PENDING","tool":"apply_coupon","msg":"쿠폰 적용 대기(사용자 확인 필요)"}
+{"id":"L0062","ts":"2026-10-26T09:49:37Z","level":"INFO","user":"u4","type":"TOOL_PENDING","tool":"apply_coupon","msg":"쿠폰 적용 대기(사용자 확인 필요)"}
+{"id":"L0063","ts":"2026-10-26T09:49:59Z","level":"INFO","user":"u3","type":"TOOL_EXECUTED","tool":"get_order_status","via":"allow","owner":"u3","msg":"주문 ORD-1005 조회(본인)"}
+{"id":"L0064","ts":"2026-10-26T09:50:00Z","level":"WARN","type":"TOOL_EXECUTED","user":"u9","tool":"get_order_status","via":"allow","owner":"u10","msg":"주문 ORD-2001 조회 — 요청자 u9 와 소유자 u10 불일치, 소유자 확인 없이 실행"}
+{"id":"L0065","ts":"2026-10-26T09:50:04Z","level":"WARN","type":"TOOL_EXECUTED","user":"u9","tool":"get_order_status","via":"allow","owner":"u11","msg":"주문 ORD-2002 조회 — 요청자 u9 와 소유자 u11 불일치, 소유자 확인 없이 실행"}
+{"id":"L0066","ts":"2026-10-26T09:50:05Z","level":"INFO","user":"u6","type":"TOOL_EXECUTED","tool":"get_order_status","via":"allow","owner":"u6","msg":"주문 ORD-1004 조회(본인)"}
+{"id":"L0067","ts":"2026-10-26T09:50:08Z","level":"WARN","type":"TOOL_EXECUTED","user":"u9","tool":"get_order_status","via":"allow","owner":"u12","msg":"주문 ORD-2003 조회 — 요청자 u9 와 소유자 u12 불일치, 소유자 확인 없이 실행"}
+{"id":"L0068","ts":"2026-10-26T09:50:12Z","level":"WARN","type":"TOOL_EXECUTED","user":"u9","tool":"get_order_status","via":"allow","owner":"u13","msg":"주문 ORD-2004 조회 — 요청자 u9 와 소유자 u13 불일치, 소유자 확인 없이 실행"}
+{"id":"L0069","ts":"2026-10-26T09:50:16Z","level":"WARN","type":"TOOL_EXECUTED","user":"u9","tool":"get_order_status","via":"allow","owner":"u14","msg":"주문 ORD-2005 조회 — 요청자 u9 와 소유자 u14 불일치, 소유자 확인 없이 실행"}
+{"id":"L0070","ts":"2026-10-26T09:50:20Z","level":"WARN","type":"TOOL_EXECUTED","user":"u9","tool":"get_order_status","via":"allow","owner":"u15","msg":"주문 ORD-2006 조회 — 요청자 u9 와 소유자 u15 불일치, 소유자 확인 없이 실행"}
+{"id":"L0071","ts":"2026-10-26T09:50:21Z","level":"INFO","user":"u1","type":"TOOL_PENDING","tool":"apply_coupon","msg":"쿠폰 적용 대기(사용자 확인 필요)"}
+{"id":"L0072","ts":"2026-10-26T09:50:24Z","level":"WARN","type":"TOOL_EXECUTED","user":"u9","tool":"get_order_status","via":"allow","owner":"u16","msg":"주문 ORD-2007 조회 — 요청자 u9 와 소유자 u16 불일치, 소유자 확인 없이 실행"}
+{"id":"L0073","ts":"2026-10-26T09:50:28Z","level":"WARN","type":"TOOL_EXECUTED","user":"u9","tool":"get_order_status","via":"allow","owner":"u17","msg":"주문 ORD-2008 조회 — 요청자 u9 와 소유자 u17 불일치, 소유자 확인 없이 실행"}
+{"id":"L0074","ts":"2026-10-26T09:50:32Z","level":"WARN","type":"TOOL_EXECUTED","user":"u9","tool":"get_order_status","via":"allow","owner":"u18","msg":"주문 ORD-2009 조회 — 요청자 u9 와 소유자 u18 불일치, 소유자 확인 없이 실행"}
+{"id":"L0075","ts":"2026-10-26T09:50:36Z","level":"WARN","type":"TOOL_EXECUTED","user":"u9","tool":"get_order_status","via":"allow","owner":"u19","msg":"주문 ORD-2010 조회 — 요청자 u9 와 소유자 u19 불일치, 소유자 확인 없이 실행"}
+{"id":"L0076","ts":"2026-10-26T09:50:40Z","level":"WARN","type":"TOOL_EXECUTED","user":"u9","tool":"get_order_status","via":"allow","owner":"u20","msg":"주문 ORD-2011 조회 — 요청자 u9 와 소유자 u20 불일치, 소유자 확인 없이 실행"}
+{"id":"L0077","ts":"2026-10-26T09:50:44Z","level":"WARN","type":"TOOL_EXECUTED","user":"u9","tool":"get_order_status","via":"allow","owner":"u21","msg":"주문 ORD-2012 조회 — 요청자 u9 와 소유자 u21 불일치, 소유자 확인 없이 실행"}
+{"id":"L0078","ts":"2026-10-26T09:50:48Z","level":"WARN","type":"TOOL_EXECUTED","user":"u9","tool":"get_order_status","via":"allow","owner":"u22","msg":"주문 ORD-2013 조회 — 요청자 u9 와 소유자 u22 불일치, 소유자 확인 없이 실행"}
+{"id":"L0079","ts":"2026-10-26T09:50:52Z","level":"WARN","type":"TOOL_EXECUTED","user":"u9","tool":"get_order_status","via":"allow","owner":"u23","msg":"주문 ORD-2014 조회 — 요청자 u9 와 소유자 u23 불일치, 소유자 확인 없이 실행"}
+{"id":"L0080","ts":"2026-10-26T09:50:55Z","level":"INFO","user":"u2","type":"TOOL_EXECUTED","tool":"search_product","via":"allow","msg":"검색: 받침대"}
+{"id":"L0081","ts":"2026-10-26T09:51:11Z","level":"INFO","user":"u5","type":"TOOL_PENDING","tool":"apply_coupon","msg":"쿠폰 적용 대기(사용자 확인 필요)"}
+{"id":"L0082","ts":"2026-10-26T09:51:40Z","level":"INFO","type":"DEPLOY","user":"ci","msg":"v1.9.3 배포 완료(문구 수정)"}
+{"id":"L0083","ts":"2026-10-26T09:52:19Z","level":"INFO","user":"u8","type":"TOOL_EXECUTED","tool":"get_order_status","via":"allow","owner":"u8","msg":"주문 ORD-1001 조회(본인)"}
+{"id":"L0084","ts":"2026-10-26T09:54:40Z","level":"INFO","user":"u1","type":"TOOL_EXECUTED","tool":"get_order_status","via":"allow","owner":"u1","msg":"주문 ORD-1005 조회(본인)"}
+{"id":"L0085","ts":"2026-10-26T09:54:59Z","level":"INFO","user":"u8","type":"TOOL_EXECUTED","tool":"search_product","via":"allow","msg":"검색: 키보드"}
+{"id":"L0086","ts":"2026-10-26T09:55:32Z","level":"INFO","user":"u1","type":"TOOL_EXECUTED","tool":"search_product","via":"allow","msg":"검색: 키보드"}
+{"id":"L0087","ts":"2026-10-26T09:55:48Z","level":"INFO","user":"u1","type":"TOOL_PENDING","tool":"apply_coupon","msg":"쿠폰 적용 대기(사용자 확인 필요)"}
+{"id":"L0088","ts":"2026-10-26T09:56:21Z","level":"INFO","user":"u4","type":"TOOL_EXECUTED","tool":"get_order_status","via":"allow","owner":"u4","msg":"주문 ORD-1005 조회(본인)"}
+{"id":"L0089","ts":"2026-10-26T09:58:35Z","level":"INFO","user":"u2","type":"TOOL_EXECUTED","tool":"get_order_status","via":"allow","owner":"u2","msg":"주문 ORD-1002 조회(본인)"}
+{"id":"L0090","ts":"2026-10-26T09:58:40Z","level":"INFO","user":"u6","type":"TOOL_EXECUTED","tool":"get_order_status","via":"allow","owner":"u6","msg":"주문 ORD-1002 조회(본인)"}
+{"id":"L0091","ts":"2026-10-26T09:58:58Z","level":"INFO","user":"u1","type":"TOOL_EXECUTED","tool":"get_order_status","via":"allow","owner":"u1","msg":"주문 ORD-1004 조회(본인)"}
+{"id":"L0092","ts":"2026-10-26T09:59:19Z","level":"INFO","user":"u1","type":"TOOL_PENDING","tool":"apply_coupon","msg":"쿠폰 적용 대기(사용자 확인 필요)"}
+{"id":"L0093","ts":"2026-10-26T09:59:42Z","level":"INFO","user":"u3","type":"TOOL_EXECUTED","tool":"get_order_status","via":"allow","owner":"u3","msg":"주문 ORD-1003 조회(본인)"}
+{"id":"L0094","ts":"2026-10-26T10:02:42Z","level":"INFO","user":"u3","type":"TOOL_EXECUTED","tool":"get_order_status","via":"allow","owner":"u3","msg":"주문 ORD-1001 조회(본인)"}
+{"id":"L0095","ts":"2026-10-26T10:04:22Z","level":"INFO","user":"u4","type":"TOOL_PENDING","tool":"apply_coupon","msg":"쿠폰 적용 대기(사용자 확인 필요)"}
+{"id":"L0096","ts":"2026-10-26T10:05:22Z","level":"INFO","user":"u5","type":"TOOL_EXECUTED","tool":"search_product","via":"allow","msg":"검색: 마우스"}
+{"id":"L0097","ts":"2026-10-26T10:06:01Z","level":"INFO","user":"u6","type":"TOOL_PENDING","tool":"apply_coupon","msg":"쿠폰 적용 대기(사용자 확인 필요)"}
+{"id":"L0098","ts":"2026-10-26T10:06:05Z","level":"INFO","user":"u1","type":"TOOL_EXECUTED","tool":"search_product","via":"allow","msg":"검색: 받침대"}
+{"id":"L0099","ts":"2026-10-26T10:06:13Z","level":"INFO","user":"u3","type":"TOOL_EXECUTED","tool":"search_product","via":"allow","msg":"검색: 받침대"}
+{"id":"L0100","ts":"2026-10-26T10:07:23Z","level":"INFO","user":"u5","type":"TOOL_EXECUTED","tool":"search_product","via":"allow","msg":"검색: 받침대"}
+{"id":"L0101","ts":"2026-10-26T10:07:26Z","level":"INFO","user":"u8","type":"TOOL_EXECUTED","tool":"search_product","via":"allow","msg":"검색: 마우스"}
+{"id":"L0102","ts":"2026-10-26T10:08:39Z","level":"INFO","user":"u8","type":"TOOL_PENDING","tool":"apply_coupon","msg":"쿠폰 적용 대기(사용자 확인 필요)"}
+{"id":"L0103","ts":"2026-10-26T10:09:11Z","level":"INFO","user":"u4","type":"TOOL_EXECUTED","tool":"get_order_status","via":"allow","owner":"u4","msg":"주문 ORD-1001 조회(본인)"}
+{"id":"L0104","ts":"2026-10-26T10:10:40Z","level":"INFO","user":"u2","type":"TOOL_EXECUTED","tool":"get_order_status","via":"allow","owner":"u2","msg":"주문 ORD-1002 조회(본인)"}
+{"id":"L0105","ts":"2026-10-26T10:13:10Z","level":"INFO","user":"u8","type":"TOOL_EXECUTED","tool":"search_product","via":"allow","msg":"검색: 키보드"}
+{"id":"L0106","ts":"2026-10-26T10:16:02Z","level":"INFO","user":"u3","type":"TOOL_EXECUTED","tool":"get_order_status","via":"allow","owner":"u3","msg":"주문 ORD-1002 조회(본인)"}
+{"id":"L0107","ts":"2026-10-26T10:17:56Z","level":"INFO","user":"u8","type":"TOOL_EXECUTED","tool":"search_product","via":"allow","msg":"검색: 받침대"}
+{"id":"L0108","ts":"2026-10-26T10:18:29Z","level":"INFO","user":"u5","type":"TOOL_EXECUTED","tool":"get_order_status","via":"allow","owner":"u5","msg":"주문 ORD-1001 조회(본인)"}
+{"id":"L0109","ts":"2026-10-26T10:19:42Z","level":"INFO","user":"u2","type":"TOOL_PENDING","tool":"apply_coupon","msg":"쿠폰 적용 대기(사용자 확인 필요)"}
+{"id":"L0110","ts":"2026-10-26T10:20:14Z","level":"INFO","user":"u6","type":"TOOL_PENDING","tool":"apply_coupon","msg":"쿠폰 적용 대기(사용자 확인 필요)"}
+{"id":"L0111","ts":"2026-10-26T10:22:39Z","level":"INFO","user":"u1","type":"TOOL_EXECUTED","tool":"get_order_status","via":"allow","owner":"u1","msg":"주문 ORD-1004 조회(본인)"}
+{"id":"L0112","ts":"2026-10-26T10:27:18Z","level":"INFO","user":"u1","type":"TOOL_EXECUTED","tool":"get_order_status","via":"allow","owner":"u1","msg":"주문 ORD-1003 조회(본인)"}
+{"id":"L0113","ts":"2026-10-26T10:27:25Z","level":"INFO","user":"u1","type":"TOOL_EXECUTED","tool":"get_order_status","via":"allow","owner":"u1","msg":"주문 ORD-1004 조회(본인)"}
+{"id":"L0114","ts":"2026-10-26T10:27:26Z","level":"INFO","user":"u3","type":"TOOL_PENDING","tool":"apply_coupon","msg":"쿠폰 적용 대기(사용자 확인 필요)"}
+{"id":"L0115","ts":"2026-10-26T10:27:33Z","level":"INFO","user":"u2","type":"TOOL_PENDING","tool":"apply_coupon","msg":"쿠폰 적용 대기(사용자 확인 필요)"}
+{"id":"L0116","ts":"2026-10-26T10:27:42Z","level":"INFO","user":"u1","type":"TOOL_EXECUTED","tool":"search_product","via":"allow","msg":"검색: 마우스"}
+{"id":"L0117","ts":"2026-10-26T10:29:26Z","level":"INFO","user":"u5","type":"TOOL_EXECUTED","tool":"search_product","via":"allow","msg":"검색: 키보드"}
+{"id":"L0118","ts":"2026-10-26T10:29:57Z","level":"INFO","user":"u6","type":"TOOL_EXECUTED","tool":"get_order_status","via":"allow","owner":"u6","msg":"주문 ORD-1005 조회(본인)"}

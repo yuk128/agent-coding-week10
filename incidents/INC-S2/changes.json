@@ -1,0 +1,22 @@
+[
+  {
+    "id": "C-204",
+    "ts": "2026-10-20T16:20:00Z",
+    "author": "dev-park",
+    "title": "feat: 결제 헬퍼 추가 (AI 보조) — 예제 키를 그대로 사용",
+    "files": [
+      "src/payments/helper.js"
+    ],
+    "note": "소스에 sk-live 형식의 값이 포함됨, 저장소 공개 포크에 노출"
+  },
+  {
+    "id": "C-211",
+    "ts": "2026-10-23T11:00:00Z",
+    "author": "dev-lee",
+    "title": "chore: 로그 포맷 정리",
+    "files": [
+      "src/log.js"
+    ],
+    "note": ""
+  }
+]

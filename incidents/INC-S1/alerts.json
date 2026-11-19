@@ -1,0 +1,9 @@
+[
+  {
+    "id": "A-1",
+    "ts": "2026-10-22T13:40:00Z",
+    "name": "latency-p95",
+    "severity": "medium",
+    "note": "p95 1.2s"
+  }
+]

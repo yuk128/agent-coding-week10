@@ -1,0 +1,4 @@
+{
+  "_설명": "경보 ID 마다 첫 대응을 적는다. action: KILL_SWITCH | REVOKE_KEY | BLOCK_USER | THROTTLE | REVIEW. critical 은 KILL_SWITCH 또는 REVOKE_KEY 이고 15분 안(slaMin ≤ 15), high 는 60분, 나머지 240분 이내. steps 는 2단계 이상.",
+  "INJECTION_PROBE": { "action": "REVIEW", "owner": "", "slaMin": 0, "steps": [] }
+}

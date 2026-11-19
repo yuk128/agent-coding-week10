@@ -1,0 +1,12 @@
+{
+  "limiter": { "maxRequestsPerMin": 10, "maxTokensPerRequest": 1000, "dailyTokenBudget": 50000 },
+  "detect": {
+    "injectionProbe": { "count": 3, "windowSec": 600 },
+    "orderEnumeration": { "count": 5, "windowSec": 300 },
+    "bruteForce": { "count": 5, "windowSec": 300 },
+    "secretInOutput": { "windowSec": 600 },
+    "budget": { "warnRatio": 0.8, "windowSec": 86400 }
+  },
+  "allowInstallScripts": ["node-gyp-helper"],
+  "approvalLevels": { "couponMaxPercent": 20 }
+}
