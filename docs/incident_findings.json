@@ -1,1 +1,67 @@
-[]
+[
+    {
+        "incident": "INC-S1",
+        "rootCause": "indirect_injection",
+        "failedControls": [
+            "no_data_separation",
+            "no_taint_policy",
+            "no_human_approval",
+            "no_least_privilege"
+        ],
+        "evidence": [
+            "L0079",
+            "L0080",
+            "L0081",
+            "C-198"
+        ],
+        "immediateActions": [
+            "disable_write_tools",
+            "quarantine_document",
+            "notify_affected_users",
+            "add_regression_test"
+        ],
+        "lessons": "외부 리뷰 본문 속 숨은 지시가 데이터 구분 없이 프롬프트에 들어가 send_email 이 사용자 확인 없이 실행되었다. 문서가 섞인 요청에서는 쓰기 도구를 코드로 막고, 외부 발송은 승인 게이트와 최소 권한으로 제한해야 한다."
+    },
+    {
+        "incident": "INC-S2",
+        "rootCause": "hardcoded_secret_committed",
+        "failedControls": [
+            "no_secret_scanning",
+            "no_monitoring_alert"
+        ],
+        "evidence": [
+            "C-204",
+            "L0020",
+            "L0052",
+            "L0054"
+        ],
+        "immediateActions": [
+            "revoke_and_rotate_key",
+            "purge_git_history",
+            "add_secret_scan_ci"
+        ],
+        "lessons": "결제 키가 소스에 하드코딩되어 공개 포크에 노출되었고 CI 에 시크릿 스캔이 없어 통과했다. 코드에서 키를 지우는 것만으로는 부족하며 키 폐기·재발급과 git 이력 정리, 시크릿 스캔 CI 가 필요하다."
+    },
+    {
+        "incident": "INC-S3",
+        "rootCause": "missing_ownership_check",
+        "failedControls": [
+            "no_ownership_check",
+            "no_monitoring_alert"
+        ],
+        "evidence": [
+            "C-221",
+            "L0064",
+            "L0065",
+            "L0067"
+        ],
+        "immediateActions": [
+            "block_user",
+            "fix_authz_in_code",
+            "notify_affected_users",
+            "add_enumeration_alert",
+            "add_regression_test"
+        ],
+        "lessons": "소유자 확인을 코드에서 빼고 시스템 프롬프트 문장으로 대체해 한 계정이 주문번호를 순서대로 조회하며 남의 주문 정보를 볼 수 있었다. 권한 검사는 코드로 집행하고, 주문 순회 경보로 탐지해야 한다."
+    }
+]

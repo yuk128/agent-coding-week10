@@ -37,16 +37,20 @@
 
 - 재시도 횟수: 아직 미작성
 
-### [Mission _2] 작업 단위: 
-- 도구 · 용도:
+### [Mission _2] 작업 단위: app/shop_api.js 취약점 수정(V1~V7) · scanner/(secrets.js, deps.js, sbom.js) 구현 · docs/REVIEW.md 작성
+- 도구 · 용도: Claude(채팅) — 문제지와 SEC_CONTRACT §2 분석, 수정 대상 파일 정리, shop_api.js · secrets.js · deps.js · sbom.js 전체 코드와 REVIEW.md 초안 작성 / VS Code · PowerShell — 파일 적용, 적용 여부 확인(Select-String), 점수 측정 / Node.js — npm run eval:code, npm run eval:scanner
 - 요청 요약(목표 / 맥락 / 제약 / 검증):
-- AI 에 넣지 않은 정보(마스킹한 것):
-- 사람이 바꾼 것(계획 · 목록에서):
-- 결과(점수 변화):
-- 에이전트의 실수 · 거짓 확신 · 미끼에 속은 부분:
-- 사람이 확인한 범위:
-- 다음에 바꿀 규칙(AGENTS.md):
-- 재시도 횟수:
+목표: AI가 만든 app/shop_api.js 의 취약점 7가지(V1~V7)를 고치고, 같은 실수를 찾는 스캐너(시크릿 · 의존성 · SBOM)를 구현하고, REVIEW.md 에 리뷰 기록을 남김
+맥락: docs/SEC_CONTRACT.md §2.1~2.4 를 기준으로 하고, sim/minidb.js(? 바인딩 지원 확인) · sim/gateway.js(결제 호출 인자) · sim/registry.json 과 lock 의 데이터 모양을 확인한 뒤 작성
+제약: 평가기 코드를 읽고 점수에 맞추지 않고 계약서 규칙을 구현함(R1). 정상 기능(가입 · 로그인 · 검색 · 주문 · 결제 · 본인 조회)을 유지하고 it's 같은 따옴표 검색어도 통과시킴. 미션에서 지시하지 않은 작업은 하지 않고, 검증은 최소한으로 하며 완성에 집중함
+검증: npm run eval:code 의 V1~V7 · F 항목, npm run eval:scanner 의 S-1~S-4 · D-1~D-3 · M-1 항목
+- AI 에 넣지 않은 정보(마스킹한 것): 실제 키 · 비밀번호 · 개인정보는 넣지 않고 수업용 가상 코드와 가상 데이터(과제에 포함된 예시 값)만 사용함
+- 사람이 바꾼 것(계획 · 목록에서): AI에게 지시하지 않은 일은 하지 말 것, 검증은 최소한으로 할 것, 파일 하나씩 전체 내용을 줄 것을 요구해 작업 범위와 순서를 정함. 수정 순서는 shop_api.js → scanner 3개 → REVIEW.md 로 진행하고, 필요한 파일(SEC_CONTRACT.md, minidb.js, gateway.js 등)을 사람이 직접 첨부함. 결과는 터미널 출력으로 캡쳐해 확인하고, Windows PowerShell 환경에 맞는 명령으로 바꿔 받음. AI가 만든 코드는 파일 단위로 app/ · scanner/ 에 적용함.
+- 결과(점수 변화): 수정 전 코드 수정 0.68/9점(V1~V7 대부분 0건 방어, 정상 기능 10건 중 9건), 스캐너 0/7점 → 수정 후 코드 수정 9/9점(V1~V7 전부 방어, 정상 기능 10/10), 스캐너 7/7점(오탐 없음). 미션 2 영역(코드 9 + 스캐너 7) 0.68/16점 → 16/16점. REVIEW.md 에 취약점 7건과 추가 발견 2건, 체크리스트, AI 리뷰어의 오탐 · 누락을 기록함.
+- 에이전트의 실수 · 거짓 확신 · 미끼에 속은 부분: (1) AI가 처음 안내한 find · head 명령이 Windows PowerShell 에서 동작하지 않아 오류 로그로 발견했고, PowerShell 명령으로 다시 받음. (2) AI가 "기존 시드 사용자의 MD5 해시 때문에 로그인 정상 기능이 실패할 수 있다"고 우려했으나 실제로는 정상 기능 10/10 으로 문제없었음(우려성 지적). (3) 수정본을 적용한 뒤 처음 측정한 점수가 그대로여서 AI가 저장 전에 평가했을 가능성을 추정했고, Select-String 으로 새 코드(MISSING_ENV 있음, secret123 없음)를 확인한 뒤 재실행해 9/9점을 확인함. (4) AI가 npm run docs 로 REVIEW.md 형식을 점검할 수 있다고 잘못 안내했으나, 이 명령은 위협 모델 · 보안 요구사항 · 거버넌스를 점검하는 명령이었음. (5) AI의 임시 점검 통과를 완료로 보지 않고 공식 평가(eval)로 다시 확인함. 미션 2 에서 미끼에 속은 사례는 없음.
+- 사람이 확인한 범위: npm run eval:code 의 V1~V7 · F 결과와 npm run eval:scanner 의 S-1~S-4 · D-1~D-3 · M-1 결과, app\shop_api.js 에 MISSING_ENV 가 있고 secret123 이 없다는 점과 파일 수정 시각을 직접 확인함. 중복 결제 방지는 계약서 범위 밖이라 수정하지 않고 REVIEW.md 에 미수정으로 기록함.
+- 다음에 바꿀 규칙(AGENTS.md): AI가 준 코드를 적용한 뒤에는 저장 여부와 적용 여부(Select-String)를 먼저 확인하고 나서 평가를 실행한다. 터미널 환경(Windows PowerShell)을 먼저 알려 명령어를 그 환경에 맞춘다. AI가 안내한 점검 명령이 무엇을 검사하는지 먼저 확인한다. 스캐너는 비밀이 아닌 값(오탐 시험)도 같이 시험한다. AI의 자체 점검이 아니라 공식 평가 결과로 완료를 판단한다.
+- 재시도 횟수: 2회 (적용 후 첫 측정에서 점수가 오르지 않아 재실행 1회, 스캐너는 1회에 통과)
 
 ### [Mission _3] 작업 단위: 
 - 도구 · 용도: ChatGPT — 입력 방어 코드 작성 및 로직 설명 / VS Code — guard/input.js 코드 수정 / Node.js — 가드레일 및 전체 테스트 실행
@@ -71,16 +75,20 @@
 
 - 재시도 횟수: 아직 미작성
 
-### [Mission _4] 작업 단위: 
-- 도구 · 용도:
+### [Mission _4] 작업 단위: 사고 분석(INC-S1~S3) · 사고 보고서 · 보안 요구사항 작성
+- 도구 · 용도: Claude(채팅) — 사고 번들 로그 분석, incident_findings.json · INCIDENT_REPORT.md · SEC_REQUIREMENTS.md 초안 작성 / Node.js — 검증 명령 실행
 - 요청 요약(목표 / 맥락 / 제약 / 검증):
-- AI 에 넣지 않은 정보(마스킹한 것):
-- 사람이 바꾼 것(계획 · 목록에서):
-- 결과(점수 변화):
-- 에이전트의 실수 · 거짓 확신 · 미끼에 속은 부분:
-- 사람이 확인한 범위:
-- 다음에 바꿀 규칙(AGENTS.md):
-- 재시도 횟수:
+목표: Mission 4 완료 조건 충족(사고 분석 3건, 사고 보고서 1건, 보안 요구사항 6건 이상)
+맥락: incidents/INC-S1~S3 의 ticket.md · events.jsonl · alerts.json · changes.json 과 docs/SEC_CONTRACT.md §5 의 값 목록
+제약: 근거는 로그 ID(L####) 또는 변경 ID(C-###)만 사용하고 미끼 줄은 제외, 과제에서 요구하지 않은 작업은 하지 않음
+검증: npm.cmd run incidents, npm.cmd run docs, npm.cmd run eval:secops, npm.cmd run playbook
+- AI 에 넣지 않은 정보(마스킹한 것): 실제 키 · 개인정보 없이 수업용 가상 사고 로그와 문서만 사용
+- 사람이 바꾼 것(계획 · 목록에서): AI 가 만든 초안을 docs/ 폴더의 파일에 그대로 적용함
+- 결과(점수 변화): npm run incidents INC-S1~S3 형식 점검 통과. npm run docs 에서 요구사항 관련 항목 통과(거버넌스 항목은 Mission 5 범위). npm run eval:secops 40/40점(보안 관제 · 한도 · 킬스위치 6/6), npm run playbook 대응 절차 완결성 100%.
+- 에이전트의 실수 · 거짓 확신 · 미끼에 속은 부분: SEC_REQUIREMENTS 초안의 일부 검증 방법(NFR-SEC-AI-04, 06)에 테스트 ID 가 없어 npm run docs 의 '측정 가능' 항목이 실패했고, RT-xx 를 추가해 통과시킴. 사고 로그의 미끼 줄(INC-S1: L0011 · L0092 · A-1 · C-231, INC-S2: L0006 · L0014 · L0069 · C-211, INC-S3: L0039 · L0049 · L0082 · C-235)은 근거에서 제외함.
+- 사람이 확인한 범위: npm run incidents, npm run docs, npm run eval:secops, npm run playbook 의 실행 결과를 확인함.
+- 다음에 바꿀 규칙(AGENTS.md): 사고 분석의 근거 ID 는 같은 시각의 줄이 아니라 원인의 인과 사슬에 들어가는 줄만 쓰고 파일에서 직접 열어 확인한다. 요구사항의 검증 방법에는 테스트 ID(RT-xx)나 측정 가능한 기준을 반드시 넣는다.
+- 재시도 횟수: 2회
 
 ### [Mission _5] 작업 단위: 
 - 도구 · 용도:

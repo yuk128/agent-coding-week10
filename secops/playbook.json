@@ -1,4 +1,63 @@
 {
   "_설명": "경보 ID 마다 첫 대응을 적는다. action: KILL_SWITCH | REVOKE_KEY | BLOCK_USER | THROTTLE | REVIEW. critical 은 KILL_SWITCH 또는 REVOKE_KEY 이고 15분 안(slaMin ≤ 15), high 는 60분, 나머지 240분 이내. steps 는 2단계 이상.",
-  "INJECTION_PROBE": { "action": "REVIEW", "owner": "", "slaMin": 0, "steps": [] }
+  "INJECTION_PROBE": {
+    "action": "REVIEW",
+    "owner": "보안 담당",
+    "slaMin": 120,
+    "steps": [
+      "경보가 난 사용자의 차단·격리 기록(INPUT_BLOCKED, DOC_QUARANTINED)과 입력 원문을 열어, 같은 문장을 반복하는 공격 시도인지 정상 고객의 오탐인지 구분한다",
+      "새 우회 문장(전각·제로폭·영어 변형 등)이 있으면 redteam/attacks.json 에 공격 케이스로 추가하고 입력 필터를 보강한 뒤 npm test 로 회귀 확인한다",
+      "시도가 계속되면 해당 사용자를 BLOCK_USER 로 올려 계정을 제한한다"
+    ]
+  },
+  "ORDER_ENUMERATION": {
+    "action": "BLOCK_USER",
+    "owner": "보안 담당",
+    "slaMin": 30,
+    "steps": [
+      "경보가 난 사용자 계정의 도우미 사용을 즉시 차단하고 세션과 토큰을 만료시킨다",
+      "AUTHZ_DENY(NOT_OWNER) 이벤트를 열어 어떤 주문번호까지 조회를 시도했는지 확인하고, 실제로 남의 주문 정보가 응답에 나갔는지 점검한다",
+      "개인정보가 나갔다면 해당 고객에게 통지하고, 소유자 확인(guard/authz.js)이 코드에서 집행되는지 확인한 뒤 회귀 테스트를 추가한다"
+    ]
+  },
+  "BRUTE_FORCE": {
+    "action": "BLOCK_USER",
+    "owner": "서비스 운영 담당",
+    "slaMin": 30,
+    "steps": [
+      "공격 대상이 된 계정을 일시 잠금하고 기존 세션과 토큰을 모두 만료시킨다",
+      "LOGIN_FAIL 이벤트의 발생 IP·시각을 확인해 반복되는 출처를 차단하고, 로그인 성공 기록이 섞여 있는지 확인한다",
+      "계정 주인에게 비밀번호 재설정을 안내하고, 로그인 시도 횟수 제한(THROTTLE)이 적용돼 있는지 점검한다"
+    ]
+  },
+  "SECRET_IN_OUTPUT": {
+    "action": "KILL_SWITCH",
+    "owner": "온콜 개발자",
+    "slaMin": 10,
+    "steps": [
+      "killswitch 로 assistant 를 끈다(사유와 담당자를 반드시 기록). 비밀이 응답에 계속 나가는 것을 먼저 멈춘다",
+      "응답에 나간 비밀이 무엇인지(내부 키, 접속 문자열, 시스템 프롬프트 등) 이벤트와 로그에서 확인하고, 해당 키를 폐기한 뒤 새 키를 발급(로테이션)한다",
+      "비밀이 어디서 들어왔는지 찾아 코드·프롬프트에서 제거하고, 출력 마스킹(redact)과 시크릿 스캔 CI 에 같은 유형을 추가한 뒤 감사 기록을 남기고 서비스를 복구한다"
+    ]
+  },
+  "BUDGET_80": {
+    "action": "THROTTLE",
+    "owner": "서비스 운영 담당",
+    "slaMin": 120,
+    "steps": [
+      "TOKENS_USED 이벤트를 사용자별로 합산해 비용을 급격히 늘린 사용자나 호출 패턴이 있는지 확인한다",
+      "원인이 된 사용자에게 분당 요청 한도를 낮춰 적용하고(limiter 설정), 정상적인 사용량 증가인지 공격(과다 소비)인지 판단한다",
+      "남은 예산으로 오늘을 버틸 수 있는지 계산하고, 부족하면 담당자에게 예산 증액 또는 추가 제한을 요청한다"
+    ]
+  },
+  "BUDGET_100": {
+    "action": "KILL_SWITCH",
+    "owner": "온콜 개발자",
+    "slaMin": 15,
+    "steps": [
+      "killswitch 로 assistant 를 끄거나 최소한 assistant.write_tools 를 끈다(사유와 담당자 기록). 추가 비용이 나가는 것을 먼저 멈춘다",
+      "TOKENS_USED 이벤트를 사용자·요청 크기별로 집계해 예산을 소진시킨 원인(반복 호출, 긴 입력)을 찾고, 해당 사용자는 BLOCK_USER 로 차단한다",
+      "limiter 의 분당 횟수·요청 크기·일일 예산 설정이 켜져 있는지 확인하고 보강한 뒤, 감사 기록을 남기고 서비스를 복구한다"
+    ]
+  }
 }
